@@ -25,19 +25,19 @@
     </div>
     <div class="form-group">
       <label for="description">Description</label>
-      {{input value=description id="description"}}
+      {{textarea value=description id="description"}}
     </div>
-    <select class="ember-select">
-      <label for="price">Price Range</label>
-      <option value="cheap">Free-$20</option>
-      <option value="medium">$20-$50</option>
-      <option value="expensive">$50+</option>
-    </select>
-    <select class="ember-select">
-      <label for="type">Urban or Wild?</label>
-      <option value="urban">Urban</option>
-      <option value="wild">Wild</option>
-    </select>
+    <label for="price">Price Range</label>
+    {{#x-select value=price}}
+      {{#x-option value='Free-$20'}}Free-$20{{/x-option}}
+      {{#x-option value='$20-$50'}}$20-$50{{/x-option}}
+      {{#x-option value='$50+'}}$50+{{/x-option}}
+    {{/x-select}}
+    <label for="type">Urban or Wild?</label>
+    {{#x-select value=type}}
+      {{#x-option value='Urban'}}Urban{{/x-option}}
+      {{#x-option value='Wild'}}Wild{{/x-option}}
+    {{/x-select}}
     <button {{action 'saveEvent'}}>Save Event</button>
   </form>
   <button{{action 'toggleDetail'}}>Nevermind!</button>

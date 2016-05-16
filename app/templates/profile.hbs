@@ -1,8 +1,11 @@
-<h1>Your Profile</h1>
-
+<div class="profileHeader">
+  <div class="profileImageLarge"></div>
+  <h1>Hey, David!</h1>
+</div>
 
 {{new-event event=event saveEvent='saveEvent'}}
 
+<h3>Your Events</h3>
 {{#each model as |event|}}
   {{#link-to 'event-detail' event.id}}{{event-tile event=event}}{{/link-to}}
 {{/each}}

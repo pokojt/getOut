@@ -2,3 +2,7 @@
   height: 70vh;
   @include flexbox($direction:column, $justify: center, $align: center);
 }
+
+.profileHeader {
+  @include flexbox($direction: column, $justify: center, $align: center);
+}

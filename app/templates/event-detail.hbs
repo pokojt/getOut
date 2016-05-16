@@ -1,1 +1,12 @@
-{{outlet}}
+<div class="eventDetail">
+  <div class="eventDetailImage" style="background: url({{model.image}}) no-repeat center; background-size:cover;"></div>
+  <div class="detailText">
+    <h3>{{model.eventName}}</h3>
+    <h4>{{model.date}} at {{model.time}}</h4>
+    <p>{{model.location}}</p>
+    <p>{{model.description}}</p>
+    <p>{{model.price}}</p>
+  </div>
+</div>
+
+{{edit-event}}

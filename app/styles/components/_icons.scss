@@ -1,7 +1,16 @@
 .profileImage {
   height: 30px;
   width: 30px;
-  background: gray;
+  background: url('/img/david.png');
+  background-size: cover;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.profileImageLarge {
+  height: 150px;
+  width: 150px;
+  background: url('/img/david.png');
+  background-size: cover;
+  border-radius: 50%;
 }
