@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'get-out',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://get-out-app.firebaseio.com/',
+    firebase: 'https://get-out-app.firebaseio.com',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
