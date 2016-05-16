@@ -1,0 +1,6 @@
+.navbar {
+  @include flexbox($justify: space-between, $align: center);
+  .menu {
+    @include flexbox($align: center);
+  }
+}
