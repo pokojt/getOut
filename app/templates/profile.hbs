@@ -1,8 +1,8 @@
 <h1>Your Profile</h1>
 
 
-{{new-event user-event=user-event saveEvent='saveEvent'}}
+{{new-event event=event saveEvent='saveEvent'}}
 
-{{#each model as |user-event|}}
-  {{event-tile user-event=user-event}}
+{{#each model as |event|}}
+  {{#link-to 'event-detail' event.id}}{{event-tile event=event}}{{/link-to}}
 {{/each}}
