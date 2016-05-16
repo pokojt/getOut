@@ -13,6 +13,12 @@ export default Ember.Route.extend({
       });
       event.save();
       this.transitionTo('event-detail', params.event_id);
+    },
+    deleteEvent(model) {
+      if(confirm("Are you sure you want to delete this event?")) {
+        model.destroyRecord();
+        this.transitionTo('profile');
+      };
     }
   }
 });
