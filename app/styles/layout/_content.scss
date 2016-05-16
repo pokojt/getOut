@@ -26,5 +26,9 @@
 .eventDetail {
   .eventDetailImage {
     height: 40vh;
+    color: lightgray;
+    font-size: 12px;
+    text-transform: uppercase;
+    @include flexbox($justify: flex-end, $align: flex-end);
   }
 }

@@ -1,5 +1,5 @@
 <div class="eventDetail">
-  <div class="eventDetailImage" style="background: url({{model.image}}) no-repeat center; background-size:cover;"></div>
+  <div class="eventDetailImage" style="background: url({{model.image}}) no-repeat center; background-size:cover;">{{model.type}} Event</div>
   <div class="detailText">
     <h3>{{model.eventName}}</h3>
     <h4>{{model.date}} at {{model.time}}</h4>
@@ -9,4 +9,6 @@
   </div>
 </div>
 
-{{edit-event}}
+{{edit-event event=model editEvent="editEvent"}}
+
+<!-- event=model -->

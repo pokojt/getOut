@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  eventFormShowing: false,
   actions: {
     toggleDetail() {
       this.toggleProperty('eventFormShowing');
