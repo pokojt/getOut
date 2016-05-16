@@ -1,2 +1,7 @@
 <h1>Your Profile</h1>
 <button class="newEvent" type="button" name="button">Post Event</button>
+
+
+{{#each model as |event|}}
+  {{event-tile user-event=user-event}}
+{{/each}}
