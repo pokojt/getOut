@@ -10,4 +10,16 @@
     width: 48%;
     background: lightgray;
   }
+  .eventImage {
+    height: 200px;
+    width: 150px;
+  }
+}
+
+.profileEventItem {
+  border: 1px solid green;
+  .profileEventImage {
+    height: 150px;
+    width: 200px;
+  }
 }
