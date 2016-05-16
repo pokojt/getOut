@@ -1,0 +1,13 @@
+.homepageEvents {
+  margin-top: 10%;
+}
+
+.friendEvents {
+  @include flexbox($justify: space-around, $wrap: wrap, $align: center);
+  .eventItem {
+    border: 1px solid white;
+    height: 150px;
+    width: 48%;
+    background: lightgray;
+  }
+}

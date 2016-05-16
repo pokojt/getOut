@@ -1,3 +1,7 @@
 body {
   @extend %centered;
 }
+
+a {
+  text-decoration: none;
+}
