@@ -4,17 +4,45 @@
 
 .friendEvents {
   @include flexbox($justify: space-around, $wrap: wrap, $align: center);
+}
   .eventItem {
     border: 1px solid white;
-    height: 150px;
-    width: 48%;
-    background: lightgray;
+    text-align: left;
+    height: 300px;
+    width: 90%;
+    background: #efefef;
+    .friendEventPhoto {
+      width: 100%;
+      height: 60%;
+      color: lightgray;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding-right: 10px;
+      @include flexbox($justify: flex-end, $align: flex-end);
+    }
+    .eventText {
+      padding: 1% 10px 1% 10px;
+      height: 20%;
+    }
+    .friendsGoing {
+      height: 20%;
+      .going {
+        font-size: 10px;
+        text-transform: uppercase;
+        margin: 0 0 0 10px;;
+      }
+      .friendicons {
+        @include flexbox($justify: flex-start);
+        .friendicon {
+          border-radius: 50%;
+          margin: 10px 5px 0 5px;
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
   }
-  .eventImage {
-    height: 200px;
-    width: 150px;
-  }
-}
+
 //
 // .friendEventCarousel {
 //   border: 1px solid green;

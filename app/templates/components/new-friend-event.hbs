@@ -1,0 +1,72 @@
+{{#liquid-if eventFormShowing class="new"}}
+<div class="createFriendEvent">
+  <h2>Post a New Friend Event</h2>
+  <form class="createFriend EventForm">
+    <div class="form-group">
+      <label for="eventName">Event Name</label>
+      {{input value=eventName id="eventName"}}
+    </div>
+    <div class="form-group">
+      <label for="date">Event Date</label>
+      {{input type=date value=date id="date"}}
+    </div>
+    <div class="form-group">
+      <label for="time">Event Time</label>
+      {{input value=time id="time"}}
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      {{input value=location id="location"}}
+    </div>
+    <div class="form-group">
+      <label for="image">Event Photo URL</label>
+      {{input value=image id="image"}}
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      {{textarea value=description id="description"}}
+    </div>
+    <label for="price">Price Range</label>
+    {{#x-select value=price}}
+      {{#x-option value='Free-$20'}}Free-$20{{/x-option}}
+      {{#x-option value='$20-$50'}}$20-$50{{/x-option}}
+      {{#x-option value='$50+'}}$50+{{/x-option}}
+    {{/x-select}}
+    <label for="type">Urban or Wild?</label>
+    {{#x-select value=type}}
+      {{#x-option value='Urban'}}Urban{{/x-option}}
+      {{#x-option value='Wild'}}Wild{{/x-option}}
+    {{/x-select}}
+    <div class="form-group">
+      <label for="friend1">Friend 1</label>
+      {{input value=friend1 id="friend1"}}
+    </div>
+    <div class="form-group">
+      <label for="friend2">Friend 2</label>
+      {{input value=friend2 id="friend2"}}
+    </div>
+    <div class="form-group">
+      <label for="friend3">Friend 3</label>
+      {{input value=friend3 id="friend3"}}
+    </div>
+    <div class="form-group">
+      <label for="friend4">Friend 4</label>
+      {{input value=friend4 id="friend4"}}
+    </div>
+    <div class="form-group">
+      <label for="friend5">Friend 5</label>
+      {{input value=friend5 id="friend5"}}
+    </div>
+    <div class="form-group">
+      <label for="hostedBy">Hosted By:</label>
+      {{input value=hostedBy id="hostedBy"}}
+    </div>
+    <button {{action 'saveEvent'}}>Save Event</button>
+  </form>
+  <button{{action 'toggleDetail'}}>Nevermind!</button>
+</div>
+{{else}}
+  <div class="createEvent">
+    <button id="newEvent" {{action 'toggleDetail'}}>Post a New Friend Event</button>
+  </div>
+{{/liquid-if}}

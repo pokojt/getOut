@@ -9,8 +9,12 @@
     {{#link-to 'index'}}<p>Sign Out</p>{{/link-to}}
   </div>
 </div>
-<div class="results hidden">
-  <h1>these are fake results!</h1>
-</div>
 
-{{search-form}}
+<h4>Update Events</h4>
+
+{{new-friend-event admin-event=admin-event saveEvent='saveEvent'}}
+
+<h3>Your Friend Events</h3>
+{{#each model as |admin-event|}}
+  {{#link-to 'event-detail' admin-event.id}}{{admin-event-tile admin-event=admin-event}}{{/link-to}}
+{{/each}}
