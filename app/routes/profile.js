@@ -9,6 +9,9 @@ export default Ember.Route.extend({
      var newEvent = this.store.createRecord('event', formInputs);
      newEvent.save();
      this.transitionTo('profile');
+   },
+   showNav: function() {
+     $(".navigation").toggle('hidden');
    }
   }
 });

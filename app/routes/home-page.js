@@ -1,7 +1,9 @@
 import Ember from 'ember';
-import $ from 'jquery';
 
 export default Ember.Route.extend({
+  model() {
+    return this.store.findAll('event');
+  },
   actions: {
     showNav: function() {
       $(".navigation").toggle('hidden');

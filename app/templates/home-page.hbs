@@ -1,0 +1,32 @@
+<div class="homeHeader">
+  <h1>g e t o u t !</h1>
+  {{#link-to 'filter-search'}}<button class="helpMeSearch" type="button" name="button">Help Me Get Out</button>{{/link-to}}
+
+</div>
+
+
+
+<div class="homepageEvents">
+  <input id="searchbar" type="search" name="name" placeholder="Search All Events" value="">
+  {{j-query}}
+
+<div class="friendEventCarousel">
+  <!-- <p class="leftarrow">LEFT</p> -->
+  <div class="friendEvents">
+    <div class="eventItem"></div>
+    <div class="eventItem"></div>
+    <div class="eventItem"></div>
+    <div class="eventItem"></div>
+    <div class="eventItem"></div>
+    <div class="eventItem featured"></div>
+    <div class="eventItem"></div>
+    <div class="eventItem"></div>
+  </div>
+  <!-- <p class="rightarrow">RIGHT</p> -->
+</div>
+  <div class="yourEvents hidden">
+    {{#each model as |event|}}
+    {{#link-to 'event-detail' event.id}}{{event-tile event=event}}{{/link-to}}
+    {{/each}}
+  </div>
+</div>

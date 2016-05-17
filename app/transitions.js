@@ -1,12 +1,12 @@
 export default function(){
   this.transition(
-    this.fromRoute('index'),
+    this.fromRoute('home-page'),
     this.toRoute('filter-search'),
     this.use('toLeft'),
     this.reverse('toRight')
   );
   this.transition(
-    this.fromRoute('index'),
+    this.fromRoute('home-page'),
     this.toRoute('profile'),
     this.use('toDown'),
     this.reverse('toUp')
