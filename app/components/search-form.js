@@ -5,7 +5,14 @@ import $ from 'jquery';
 export default Ember.Component.extend({
   formShow: true,
   actions: {
-    scroll: function() {
+    selectUrban: function() {
+      $(".getUrban").addClass('selected');
+      $('html, body').animate({
+        scrollTop: $(".filterSearchForm").offset().top +700
+      }, 1000);
+    },
+    selectWild: function() {
+      $(".getWild").addClass('selected');
       $('html, body').animate({
         scrollTop: $(".filterSearchForm").offset().top +700
       }, 1000);
@@ -28,6 +35,7 @@ export default Ember.Component.extend({
     tryAgain: function() {
       this.set('formShow', true);
       $(".results").addClass('hidden');
+      $("div").removeClass('selected');
     }
   }
 });

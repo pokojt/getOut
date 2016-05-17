@@ -2,16 +2,19 @@
 <div class="filterSearch">
   <form class="filterSearchForm">
     <div class="checkgroup urbanWildCheckboxes">
-      <div class="form-group-check getUrban">
-        <label for="type">Get Urban</label>
-        {{input type="checkbox" labelProperty=type checked=urban class="toggle"}}
+      <div {{action 'selectUrban'}} class="form-group-check getUrban">
+        <img src="img/codescoolgrad.png" alt="" />
+        <h3>Get Urban?</h3>
+        <!-- {{input type="checkbox" labelProperty=type checked=urban class="toggle"}} -->
       </div>
       <h3>OR</h3>
       <div class="form-group-check getWild">
-        <label for="type">Get Wild?</label>
-        {{input type="checkbox" labelProperty=type checked=wild class="toggle"}}
+        <img {{action 'selectWild'}} src="img/ponytail.png" alt="" />
+        <h3>Get Wild?</h3>
+        <!-- <label for="type">Get Wild?</label>
+        {{input type="checkbox" labelProperty=type checked=wild class="toggle"}} -->
       </div>
-      <button{{action 'scroll'}}>Next</button>
+      <!-- <button{{action 'scroll'}}>Next</button> -->
     </div>
 
     <div class="checkgroup priceRangeCheckboxese">

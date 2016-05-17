@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('filter-search');
   this.route('home-page');
   this.route('admin');
+  this.route('friend-event-detail', {path: '/friend-event-detail/:admin-event_id'});
 });
 
 export default Router;

@@ -1,0 +1,21 @@
+<div class="navbar">
+  {{#link-to 'home-page'}}<h2 id="title">logo</h2>{{/link-to}}
+  <div class="menu">
+    {{#link-to 'profile'}}<div class="profileImage"></div>{{/link-to}}
+    <h3 {{action 'showNav'}}>MENU</h3>
+  </div>
+  <div class="navigation hidden">
+    <p>Browse All Events</p>
+    {{#link-to 'index'}}<p>Sign Out</p>{{/link-to}}
+  </div>
+</div>
+<div class="eventDetail">
+  <div class="eventDetailImage" style="background: url({{model.image}}) no-repeat center; background-size:cover;">{{model.type}} Event</div>
+  <div class="detailText">
+    <h3>{{model.eventName}}</h3>
+    <h4>{{model.date}} at {{model.time}}</h4>
+    <p>{{model.location}}</p>
+    <p>{{model.description}}</p>
+    <p>{{model.price}}</p>
+  </div>
+</div>

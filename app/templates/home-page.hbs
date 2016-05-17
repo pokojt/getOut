@@ -26,7 +26,7 @@
 
   <div class="friendEvents">
     {{#each model.friendEvents as |admin-event|}}
-    {{admin-event-tile admin-event=admin-event}}
+    {{#link-to 'friend-event-detail' admin-event.id}}{{admin-event-tile admin-event=admin-event}}{{/link-to}}
     {{/each}}
   </div>
 
