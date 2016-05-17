@@ -1,6 +1,19 @@
 <div class="profileEventItem">
-  <div class="profileEventImage" style="background: url({{event.image}}) no-repeat center; background-size:cover;"></div>
-  <h3>{{event.eventName}}</h3>
-  <h4>{{event.date}}</h4>
-  <p>{{event.location}}</p>
+  <div class="profileEventImage" style="background: url({{event.image}}) no-repeat center; background-size:cover;">
+    <p class='eventType'>{{event.type}} EVENT</p>
+  </div>
+  <div class="eventText">
+    <h3>{{event.eventName}}</h3>
+    <p>{{event.date}} at {{event.time}} | {{event.location}}</p>
+  </div>
+  <div class="friendsGoing">
+    <p class="going">Friends Going:</p>
+    <div class="friendicons">
+      <div class="friendicon" style="background: url('img/codescoolgrad.png') no-repeat center; background-size: cover;"></div>
+      <div class="friendicon" style="background: url('img/david.png') no-repeat center; background-size: cover;"></div>
+      <div class="friendicon" style="background: url('img/coast.png') no-repeat center; background-size: cover;"></div>
+      <div class="friendicon" style="background: url('img/andrewbird.png') no-repeat center; background-size: cover;"></div>
+      <div class="friendicon" style="background: url('img/ponytail.png') no-repeat center; background-size: cover;"></div>
+    </div>
+  </div>
 </div>
