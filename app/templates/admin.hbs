@@ -14,7 +14,10 @@
 
 {{new-friend-event admin-event=admin-event saveEvent='saveEvent'}}
 
+
 <h3>Your Friend Events</h3>
-{{#each model as |admin-event|}}
+<div class="friendEvents">
+  {{#each model as |admin-event|}}
   {{admin-event-tile admin-event=admin-event}}
-{{/each}}
+  {{/each}}
+</div>

@@ -23,8 +23,15 @@
   {{j-query}}
 
 <div class="friendEventCarousel">
-  <!-- <p class="leftarrow">LEFT</p> -->
+
   <div class="friendEvents">
+    {{#each model.friendEvents as |admin-event|}}
+    {{admin-event-tile admin-event=admin-event}}
+    {{/each}}
+  </div>
+
+  <!-- <p class="leftarrow">LEFT</p> -->
+  <!-- <div class="friendEvents">
     <div class="eventItem">
       <div class="friendEventPhoto" style="background: url('img/andrewbird.png') no-repeat center; background-size: cover;">
         <p class='eventType'>URBAN EVENT</p>
@@ -162,11 +169,11 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
   <!-- <p class="rightarrow">RIGHT</p> -->
 </div>
   <div class="yourEvents hidden">
-    {{#each model as |event|}}
+    {{#each model.yourEvents as |event|}}
     {{#link-to 'event-detail' event.id}}{{event-tile event=event}}{{/link-to}}
     {{/each}}
   </div>
