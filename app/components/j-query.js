@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import $ from 'jquery';
 
 export default Ember.Component.extend({
     actions: {
@@ -10,7 +11,6 @@ export default Ember.Component.extend({
         $(".friendEvents").fadeOut();
         $(".yourEvents").removeClass("hidden");
         $(".yourEvents").fadeIn();
-
       }
     }
 });

@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('profile');
   this.route('event-detail', {path: '/event-detail/:event_id'});
+  this.route('filter-search');
 });
 
 export default Router;

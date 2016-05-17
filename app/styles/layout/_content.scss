@@ -16,6 +16,35 @@
   }
 }
 
+// .friendEventCarousel {
+//   border: 1px solid green;
+//   overflow: auto;
+//   @include flexbox($justify: space-around, $align: center);
+// }
+// .friendEvents {
+//   @include flexbox();
+//   width: 95%;
+//   border: 5px solid purple;
+//   overflow: auto;
+//   .eventItem {
+//     height: 200px;
+//     width: 10px;
+//     background: blue;
+//     margin: 1%;
+//   }
+//   .featured {
+//     // position: relative;
+//     border: 1px solid white;
+//     height: 200px;
+//     width: 90%;
+//     background: lightgray;
+//   }
+//   .eventImage {
+//     height: 200px;
+//     width: 150px;
+//   }
+// }
+
 .profileEventItem {
   .profileEventImage {
     height: 150px;
