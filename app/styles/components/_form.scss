@@ -1,0 +1,5 @@
+.filterSearchForm > * {
+  height: 100vh;
+  @include flexbox($direction: column, $justify: space-around, $align: center);
+
+}

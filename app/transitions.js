@@ -8,6 +8,12 @@ export default function(){
   this.transition(
     this.fromRoute('index'),
     this.toRoute('profile'),
+    this.use('toDown'),
+    this.reverse('toUp')
+  );
+  this.transition(
+    this.fromRoute('filter-search'),
+    this.toRoute('search-results'),
     this.use('toLeft'),
     this.reverse('toRight')
   );

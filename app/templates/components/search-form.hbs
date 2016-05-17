@@ -1,0 +1,40 @@
+{{#liquid-if formShow}}
+<div class="filterSearch">
+  <form class="filterSearchForm">
+    <div class="checkgroup urbanWildCheckboxes">
+      <div class="form-group-check getUrban">
+        <label for="type">Get Urban</label>
+        {{input type="checkbox" labelProperty=type checked=urban class="toggle"}}
+      </div>
+      <h3>OR</h3>
+      <div class="form-group-check getWild">
+        <label for="type">Get Wild?</label>
+        {{input type="checkbox" labelProperty=type checked=wild class="toggle"}}
+      </div>
+      <button{{action 'scroll'}}>Next</button>
+    </div>
+
+    <div class="checkgroup priceRangeCheckboxese">
+      <div class="form-group-check cheapPrice">
+        <label for="price">Free-$20</label>
+        {{input type="checkbox" id="cheap" checked=cheap class="toggle"}}
+      </div>
+      <div class="form-group-check mediumPrice">
+        <label for="price">$20-$50</label>
+        {{input type="checkbox" id="medium" checked=medium class="toggle"}}
+      </div>
+      <h3>OR</h3>
+      <div class="form-group-check expensivePrice">
+        <label for="price">$50+?</label>
+        {{input type="checkbox" id="expensive" checked=expensive class="toggle"}}
+      </div>
+      <button{{action 'scroll2'}}>Next</button>
+    </div>
+    <div class="">
+      <button {{action 'search'}}>Get Out!</button>
+    </div>
+  </form>
+</div>
+{{else}}
+<button {{action 'tryAgain'}}>Try Again</button>
+{{/liquid-if}}
