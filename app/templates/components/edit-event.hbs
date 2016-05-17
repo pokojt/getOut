@@ -1,4 +1,4 @@
-{{#if editFormShowing}}
+{{#liquid-if editFormShowing class="edit"}}
 <div class="editEvent">
   <h2>Edit this Event</h2>
   <form class="editEventForm">
@@ -45,4 +45,4 @@
   <div class="editEvent">
     <button id="editEvent" {{action 'toggleEdit'}}>Edit Event</button>
   </div>
-{{/if}}
+{{/liquid-if}}

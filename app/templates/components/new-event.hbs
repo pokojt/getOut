@@ -1,5 +1,5 @@
 
-{{#if eventFormShowing}}
+{{#liquid-if eventFormShowing class="new"}}
 <div class="createEvent">
   <h2>Post a New Event</h2>
   <form class="createEventForm">
@@ -46,4 +46,4 @@
   <div class="createEvent">
     <button id="newEvent" {{action 'toggleDetail'}}>Post a New Event</button>
   </div>
-{{/if}}
+{{/liquid-if}}
