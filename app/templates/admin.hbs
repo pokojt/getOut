@@ -16,5 +16,5 @@
 
 <h3>Your Friend Events</h3>
 {{#each model as |admin-event|}}
-  {{#link-to 'event-detail' admin-event.id}}{{admin-event-tile admin-event=admin-event}}{{/link-to}}
+  {{admin-event-tile admin-event=admin-event}}
 {{/each}}

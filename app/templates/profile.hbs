@@ -18,5 +18,5 @@
 
 <h3>Your Events</h3>
 {{#each model as |event|}}
-  {{#link-to 'event-detail' event.id}}{{event-tile event=event}}{{/link-to}}
+  {{#link-to 'event-detail' admin-event.id}}{{event-tile event=event}}{{/link-to}}
 {{/each}}

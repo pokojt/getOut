@@ -23,13 +23,20 @@
     .eventText {
       padding: 1% 10px 1% 10px;
       height: 20%;
+      h3 {
+        margin-top: 3px;
+        margin-bottom: 0;
+      }
+      p {
+        margin-top: 0px;
+      }
     }
     .friendsGoing {
       height: 20%;
       .going {
         font-size: 10px;
         text-transform: uppercase;
-        margin: 0 0 0 10px;;
+        margin: 5px 0 0 5px;;
       }
       .friendicons {
         @include flexbox($justify: flex-start);
