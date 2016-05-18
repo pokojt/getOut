@@ -26,3 +26,9 @@
 .tagline {
   @include textFormat(24px, $white, $l-spacing: 10px);
 }
+
+.moneyBag {
+  height: 100px;
+  opacity: .8;
+  margin: 0;
+}
