@@ -9,3 +9,32 @@ button {
 .secondaryButton {
   background: $lightOrange;
 }
+
+.filterEventsButtons {
+  @include flexbox($justify: center);
+  width: 100%;
+}
+#friendEventsButton {
+  background: $maroon;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+#yourEventsButton {
+  border: 4px solid $maroon;
+  color: $maroon;
+  background: $white;
+}
+
+.buttonFocus {
+  background: $maroon;
+  color: $white;
+  border: 4px solid transparent;
+}
+
+.buttonNotFocus {
+  width: 50%;
+  background: $maroon;
+  padding: 5px 10px;
+  color: white;
+}
