@@ -1,9 +1,11 @@
-<div class="signIn">
-  <form>
-    <label for="username">Username</label>
-    <input type="text" name="username" value="">
-    <label for="password">Password</label>
-    <input type="password" name="password" value="">
-    {{#link-to 'home-page'}}<button type="button" name="button">Get Out !</button>{{/link-to}}
-  </form>
+<div class="indexBackground">
+  <h1 class="logo">GO</h1>
+  <h3 class='tagline'>get out</h3>
+  <div class="signIn">
+    <form>
+      <input type="text" placeholder="username" name="username" value="">
+      <input type="password" placeholder="password" name="password" value="">
+      {{#link-to 'home-page'}}<button type="button" name="button">SIGN IN</button>{{/link-to}}
+    </form>
+  </div>
 </div>

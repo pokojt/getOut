@@ -14,3 +14,15 @@
   background-size: cover;
   border-radius: 50%;
 }
+
+.logo {
+  font-size: 140px;
+  border: 8px solid $lime;
+  color: $lime;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  @include textFormat(24px, $white, $l-spacing: 10px);
+}

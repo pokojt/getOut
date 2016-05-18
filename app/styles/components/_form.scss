@@ -26,8 +26,39 @@ form {
     margin-top: 5px;
   }
 }
-.signIn {
-  height: 100vh;
-  @include flexbox($align: center);
 
+.indexBackground {
+  height: 100vh;
+  background: (linear-gradient(rgba($primaryBlue, 0),
+  rgba($primaryBlue, 0.8)),url("#{$img-path}/background.jpg")) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  @include flexbox($direction: column, $justify: center, $align: center);
+  .signIn {
+    width: 80%;
+    input {
+      text-align: center !important;
+      color: white;
+    }
+  }
+}
+
+input {
+  border: 3px solid $lime;
+  width: 100%;
+  height: 6vh;
+  @include textFormat(18px, $l-spacing: 1px);
+  background: transparent;
+  color: $white !important;
+  text-align: left;
+  padding: 10px;
+  margin: 3%;
+  &:focus {
+    outline: none;
+  }
+}
+
+label {
+  @include textFormat(18px, $color: $white,  $l-spacing: 2px);
+  text-transform: lowercase;
 }

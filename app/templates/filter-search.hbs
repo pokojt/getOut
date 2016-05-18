@@ -9,27 +9,26 @@
     {{#link-to 'index'}}<p>Sign Out</p>{{/link-to}}
   </div>
 </div>
+{{search-form}}
 
 <div class="results hidden">
   <h1>these are results!</h1>
   <div class="urbanEvents hidden">
     <h3>urban events</h3>
     {{#each model as |admin-event|}}
-    {{admin-event-tile urban-event admin-event=admin-event}}
+    {{#link-to 'friend-event-detail' admin-event.id}}{{admin-event-tile admin-event=admin-event}}{{/link-to}}
     {{/each}}
   </div>
   <div class="wildEvents hidden">
     <h3>wild events</h3>
     {{#each model as |admin-event|}}
-    {{admin-event-tile wild-event admin-event=admin-event}}
+    {{#link-to 'friend-event-detail' admin-event.id}}{{admin-event-tile admin-event=admin-event}}{{/link-to}}
     {{/each}}
   </div>
   <div class="weirdEvents hidden">
     <h3>weird events</h3>
     {{#each model as |admin-event|}}
-    {{admin-event-tile weird-event admin-event=admin-event}}
+    {{#link-to 'friend-event-detail' admin-event.id}}{{admin-event-tile admin-event=admin-event}}{{/link-to}}
     {{/each}}
   </div>
 </div>
-
-{{search-form}}

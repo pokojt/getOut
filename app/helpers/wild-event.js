@@ -5,7 +5,6 @@ export function wildEvent(params) {
   if (event.type === "Wild") {
     return event;
   }
-  return params;
 }
 
 export default Ember.Helper.helper(wildEvent);
