@@ -8,13 +8,19 @@ export default Ember.Component.extend({
     selectUrban: function() {
       $(".getUrban").addClass('selected');
       $('html, body').animate({
-        scrollTop: $(".filterSearchForm").offset().top +700
+        scrollTop: $(".filterSearchForm").offset().top +600
       }, 1000);
     },
     selectWild: function() {
       $(".getWild").addClass('selected');
       $('html, body').animate({
-        scrollTop: $(".filterSearchForm").offset().top +700
+        scrollTop: $(".filterSearchForm").offset().top +600
+      }, 1000);
+    },
+    selectWeird: function() {
+      $(".getWeird").addClass('selected');
+      $('html, body').animate({
+        scrollTop: $(".filterSearchForm").offset().top +600
       }, 1000);
     },
     scroll2: function() {
