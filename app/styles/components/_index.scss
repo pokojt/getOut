@@ -2,3 +2,10 @@
 @import 'icons';
 @import 'search';
 @import 'form';
+
+.signIn {
+  background-image: url(../img/CityBG.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

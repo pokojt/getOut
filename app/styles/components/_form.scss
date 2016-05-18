@@ -10,5 +10,8 @@
   form {
     width: 100%;
     @include flexbox($direction:column, $align: center);
+    input {
+      border: 1px solid green;
+    }
   }
 }
