@@ -7,18 +7,27 @@ export default Ember.Component.extend({
   actions: {
     selectUrban: function() {
       $(".getUrban").addClass('selected');
+      $(".urbanEvents").removeClass('hidden');
+      $(".wildEvents").addClass('hidden');
+      $(".weirdEvents").addClass('hidden');
       $('html, body').animate({
         scrollTop: $(".filterSearchForm").offset().top +600
       }, 1000);
     },
     selectWild: function() {
       $(".getWild").addClass('selected');
+      $(".wildEvents").removeClass('hidden');
+      $(".urbanEvents").addClass('hidden');
+      $(".weirdEvents").addClass('hidden');
       $('html, body').animate({
         scrollTop: $(".filterSearchForm").offset().top +600
       }, 1000);
     },
     selectWeird: function() {
       $(".getWeird").addClass('selected');
+      $(".weirdEvents").removeClass('hidden');
+      $(".urbanEvents").addClass('hidden');
+      $(".wildEvents").addClass('hidden');
       $('html, body').animate({
         scrollTop: $(".filterSearchForm").offset().top +600
       }, 1000);
@@ -31,10 +40,6 @@ export default Ember.Component.extend({
     search: function() {
       this.set('formShow', false);
       $(".results").removeClass('hidden');
-      // if (".getUrban").hasClass('selected'){
-      //   $(".urbanEvents").removeClass('hidden');
-      // } else if (
-      // }
     },
     tryAgain: function() {
       this.set('formShow', true);

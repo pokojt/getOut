@@ -1,6 +1,5 @@
 .filterSearchForm > * {
   height: 100vh;
-  border: 2px solid red;
   @include flexbox($direction: column, $justify: space-around, $align: center);
   width: 100%;
 }
@@ -13,7 +12,6 @@
 
 .urbanWildCheckboxes > *, .priceRangeCheckboxes > *{
   height: 30%;
-  border: 1px solid cyan;
   &:hover {
     // cursor: pointer;
   }
