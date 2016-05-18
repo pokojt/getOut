@@ -20,13 +20,11 @@
 
 </div>
 
+{{j-query}}
 
 
 <div class="homepageEvents">
-  {{j-query}}
-
 <div class="friendEventCarousel">
-
   <div class="friendEvents">
     {{#each model.friendEvents as |admin-event|}}
     {{#link-to 'friend-event-detail' admin-event.id}}{{admin-event-tile admin-event=admin-event}}{{/link-to}}

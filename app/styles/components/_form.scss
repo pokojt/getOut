@@ -8,6 +8,11 @@
   height: 90vh;
 }
 
+.filterSearch {
+  background: $darkBlue;
+  color: white;
+}
+
 
 
 .urbanWildCheckboxes > *, .priceRangeCheckboxes > *{
@@ -59,6 +64,6 @@ input {
 }
 
 label {
-  @include textFormat(18px, $color: $white,  $l-spacing: 2px);
+  @include textFormat(18px,  $l-spacing: 2px);
   text-transform: lowercase;
 }
