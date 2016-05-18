@@ -1,6 +1,8 @@
 .homeHeader {
-  height: 70vh;
+  height: 40vh;
   @include flexbox($direction:column, $justify: center, $align: center);
+  background: $primaryBlue;
+  color: white;
 }
 
 .profileHeader {

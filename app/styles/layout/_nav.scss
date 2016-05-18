@@ -1,6 +1,16 @@
 .navbar {
   @include flexbox($justify: space-between, $align: center);
+  background: $navBlue;
+  height: 8vh;
+  padding: 10px;
+  h2 {
+    border: 2px solid $lime;
+    color: $lime;
+  }
   .menu {
     @include flexbox($align: center);
+    img {
+      height: 20px;
+    }
   }
 }

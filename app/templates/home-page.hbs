@@ -1,8 +1,8 @@
 <div class="navbar">
-  {{#link-to 'home-page'}}<h2 id="title">logo</h2>{{/link-to}}
+  {{#link-to 'home-page'}}<h2 id="title">GO</h2>{{/link-to}}
   <div class="menu">
     {{#link-to 'profile'}}<div class="profileImage"></div>{{/link-to}}
-    <h3 {{action 'showNav'}}>MENU</h3>
+    <img {{action 'showNav'}}class="menuIcon" src="img/menu-icon.png">
   </div>
   <div class="navigation hidden">
     <p>Browse All Events</p>
@@ -11,7 +11,11 @@
 </div>
 
 <div class="homeHeader">
-  <h1>g e t o u t !</h1>
+  <h1>FIND AN EVENT</h1>
+  <div class="searchWhole">
+    <input id="searchbar" type="search" name="name" placeholder="search" value="">
+    <button class="secondaryButton" id="go"type="button" name="button">GO</button>
+  </div>
   {{#link-to 'filter-search'}}<button class="helpMeSearch" type="button" name="button">Help Me Get Out</button>{{/link-to}}
 
 </div>
@@ -19,7 +23,6 @@
 
 
 <div class="homepageEvents">
-  <input id="searchbar" type="search" name="name" placeholder="Search All Events" value="">
   {{j-query}}
 
 <div class="friendEventCarousel">

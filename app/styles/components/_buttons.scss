@@ -5,3 +5,7 @@ button {
   padding: 5px 30px 5px 30px;
   @include textFormat(17px, white, $l-spacing: 2px);
 }
+
+.secondaryButton {
+  background: $lightOrange;
+}

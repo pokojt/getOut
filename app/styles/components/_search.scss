@@ -1,7 +1,12 @@
-#searchbar {
-  height: 30px;
-  background: lightgray;
-  border: 1px solid transparent;
-  text-align: center;
-  width: 100%;
+.searchWhole {
+  @include flexbox($align: center);
+  #searchbar {
+    width: 80%;
+    margin-right: 0;
+    border-right: 0;
+  }
+  #go {
+    height: 6vh;
+    padding: 5px 15px 5px 15px;
+  }
 }
