@@ -23,14 +23,12 @@ export default Ember.Component.extend({
       }, 1000);
     },
     search: function() {
-      var filteredSearch = {
-        type: this.get('type'),
-        price: this.get('price'),
-      };
-
       this.set('formShow', false);
-      console.log(filteredSearch.type, filteredSearch.price);
       $(".results").removeClass('hidden');
+      // if (".getUrban").hasClass('selected'){
+      //   $(".urbanEvents").removeClass('hidden');
+      // } else if (
+      // }
     },
     tryAgain: function() {
       this.set('formShow', true);
