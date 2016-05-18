@@ -20,9 +20,15 @@
   </div>
   <div class="wildEvents hidden">
     <h3>wild events</h3>
+    {{#each model as |admin-event|}}
+    {{admin-event-tile wild-event admin-event=admin-event}}
+    {{/each}}
   </div>
   <div class="weirdEvents hidden">
     <h3>weird events</h3>
+    {{#each model as |admin-event|}}
+    {{admin-event-tile weird-event admin-event=admin-event}}
+    {{/each}}
   </div>
 </div>
 
